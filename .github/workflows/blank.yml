@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Hugging Face Space
-        run: curl -sSf 'https://huggingface.co/spaces/luoguocheng/n8n-free'
+        run: curl -sSf -H "Authorization: Bearer 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" 'https://huggingface.co/spaces/luoguocheng/n8n-free'
