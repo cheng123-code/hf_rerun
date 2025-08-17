@@ -15,5 +15,5 @@ jobs:
       - name: Ping Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: "curl -sSf -H 'Authorization: Bearer ${{ secrets.HF_TOKEN }}' 'https://huggingface.co/spaces/luoguocheng/n8n-free'"
+        run: "curl -sSf 'https://huggingface.co/spaces/luoguocheng/n8n-free'"
 
