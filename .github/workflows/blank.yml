@@ -14,3 +14,4 @@ jobs:
     steps:
       - name: Ping Hugging Face Space
         run: curl -sSf -H "Authorization: Bearer ${{ secrets.HF_TOKEN }}" 'https://huggingface.co/spaces/luoguocheng/n8n-free'
+
