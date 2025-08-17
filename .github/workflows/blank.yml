@@ -3,7 +3,7 @@ name: Keep App Alive
 on:
   schedule:
     # 每隔 60 分钟运行一次
-    - cron: '*0 * * * *'
+    - cron: '0 * * * *'
 
 jobs:
   ping:
