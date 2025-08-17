@@ -1,8 +1,15 @@
 name: Keep App Alive
 
 on:
+  # 在提交到 main 分支时立刻运行（可选，但推荐）
+  push:
+    branches:
+      - main
+  # 启用手动触发
+  workflow_dispatch:
+  # 按计划定时运行
   schedule:
-    # 每隔 60 分钟运行一次
+    # 每小时的整点（00 分）运行
     - cron: '0 * * * *'
 
 jobs:
