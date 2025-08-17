@@ -13,5 +13,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Hugging Face Space
-        run: curl -sSf -H "Authorization: Bearer ${{ secrets.HF_TOKEN }}" 'https://huggingface.co/spaces/luoguocheng/n8n-free'
+        run: curl -sSf -H "Authorization: Bearer ${{ secrets.HF_TOKEN }}" "https://huggingface.co/spaces/luoguocheng/n8n-free"
 
