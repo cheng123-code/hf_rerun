@@ -1,0 +1,13 @@
+name: Keep App Alive
+
+on:
+  schedule:
+    # 每隔 60 分钟运行一次
+    - cron: '*0 * * * *'
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Hugging Face Space
+        run: curl -sSf 'https://huggingface.co/spaces/luoguocheng/n8n-free'
